@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js">
+
+	</script>
+</head>
+<body>
+
+<div class="container jumbotron text-center">
+  <h1>Need a Mobile Web App?</h1>
+  <p>Well you came to the right place.</p>
+  <p>Fill out the form below and we will get back to you!</p>
+</div>
+
+<div class="container-fluid bg-grey">
+  <h2 class="text-center">Basic Information</h2>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <br>
+			<h2>What type of business do you have?</h2>
+			<select class="form-control" id="businessType">
+			  <option>eCommerce</option>
+			  <option>Local Retail</option>
+			  <option>Restaraunt</option>
+			  <option>Transportation</option>
+			</select>
+			<br>
+			<h2>How many monthly users to you currently have?</h2>
+			<select class="form-control" id="beverage">
+			  <option value="1">1-100</option>
+			  <option value="2">101-1000</option>
+			  <option value="3">1001-10,000</option>
+			  <option value="4">10,000+</option>
+			</select>
+			<h2>Choose what type of support you will need (choose one)</h2>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="subscription" value="Weekly" checked>
+			    Weekly
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="subscription" value="Monthly">
+			    Monthly
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="subscription" value="Yearly">
+			    Yearly (the cheapest option!)
+			  </label>
+			</div>
+			<h2>How soon do you need our services? Select your ideal start date.</h2>
+			<div class="form-group">
+			  <label for="startdate">Date of birth:</label>
+			  <input id="startdate" class="form-control" type="date">
+			</div>
+			<h2>Choose your color scheme</h2>
+			<div class="row">
+        <div class="col-sm-3">
+					<div class="form-group">
+					  <label for="color">Main color</label>
+					  <input id="color" class="form-control" type="color">
+					</div>
+        </div>
+				<div class="col-sm-3">
+					<div class="form-group">
+					  <label for="color">Accent color #1</label>
+					  <input id="color" class="form-control" type="color">
+					</div>
+        </div>
+				<div class="col-sm-3">
+					<div class="form-group">
+					  <label for="color">Accent color #2</label>
+					  <input id="color" class="form-control" type="color">
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+					  <label for="color">Accent color #3</label>
+					  <input id="color" class="form-control" type="color">
+					</div>
+				</div>
+			</div>
+
+		  <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
